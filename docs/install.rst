@@ -71,6 +71,7 @@ The ``GARGOYLE_SWITCH_DEFAULTS`` setting allows engineers to set the default sta
 via the gargoyle admin interface. In your ``settings.py`` add something like:
 
 .. code-block:: python
+    from gargoyle.constants import SELECTIVE
 
     GARGOYLE_SWITCH_DEFAULTS = {
         'new_switch': {
@@ -79,9 +80,14 @@ via the gargoyle admin interface. In your ``settings.py`` add something like:
           'description': 'When you want the newness',
         },
         'funky_switch': {
-          'is_active': False,
+          'initial_status': False,
           'label': 'Funky Switch',
           'description': 'Controls the funkiness.',
+        },
+        'another_switch': {
+          'initial_status': SELECTIVE,
+          'label': 'Conditional Funky Switch',
+          'description': 'Controls more funkiness.',
         },
     }
 
