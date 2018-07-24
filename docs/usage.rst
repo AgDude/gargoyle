@@ -104,7 +104,7 @@ A parent switch that has its status set to 'inherit' will return the default val
 ConditionSets
 ~~~~~~~~~~~~~
 
-User built-in or custom condition sets for more complex checking on switches with the SELECTIVE status.
+Use built-in or custom condition sets for more complex checking on switches with the SELECTIVE status.
 
 .. code-block:: python
 
