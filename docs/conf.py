@@ -12,7 +12,6 @@
 # serve to show the default.
 from __future__ import unicode_literals
 
-import django
 import os
 import sys
 
@@ -25,6 +24,7 @@ project_root = os.path.dirname(cwd)
 # version is used.
 sys.path.insert(0, project_root)
 
+import django
 from django.conf import settings  # noqa
 settings.configure()
 django.setup()
