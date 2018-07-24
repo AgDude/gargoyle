@@ -12,6 +12,7 @@
 # serve to show the default.
 from __future__ import unicode_literals
 
+import django
 import os
 import sys
 
@@ -26,6 +27,7 @@ sys.path.insert(0, project_root)
 
 from django.conf import settings  # noqa
 settings.configure()
+django.setup()
 
 import gargoyle  # noqa
 
